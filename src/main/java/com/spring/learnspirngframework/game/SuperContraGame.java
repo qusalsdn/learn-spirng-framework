@@ -1,7 +1,5 @@
 package com.spring.learnspirngframework.game;
 
-import com.spring.learnspirngframework.game.GamingConsole;
-
 public class SuperContraGame implements GamingConsole {
     public void up() {
         System.out.println("Jump!");

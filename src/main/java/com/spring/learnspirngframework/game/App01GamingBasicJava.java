@@ -1,4 +1,4 @@
-package com.spring.learnspirngframework;
+package com.spring.learnspirngframework.game;
 
 import com.spring.learnspirngframework.game.GameRunner;
 import com.spring.learnspirngframework.game.PacmanGame;
