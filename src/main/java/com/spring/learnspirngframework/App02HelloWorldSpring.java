@@ -2,6 +2,8 @@ package com.spring.learnspirngframework;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Arrays;
+
 public class App02HelloWorldSpring {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(HelloWorldConfiguration.class);
@@ -12,6 +14,9 @@ public class App02HelloWorldSpring {
         System.out.println(context.getBean("person2MethodCall"));
         System.out.println(context.getBean("person3Parameters"));
         System.out.println(context.getBean("address2"));
-//        System.out.println(context.getBean(Address.class)); // 해당 형식처럼 bean을 검색하고 사용할 수 있다.
+        System.out.println(context.getBean(Person.class));
+        System.out.println(context.getBean(Address.class)); // 해당 형식처럼 bean을 검색하고 사용할 수 있다.
+        System.out.println(context.getBean("person5Qualifier"));
+//        Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
     }
 }
