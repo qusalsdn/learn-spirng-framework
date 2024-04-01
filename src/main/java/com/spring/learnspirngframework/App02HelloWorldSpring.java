@@ -9,6 +9,9 @@ public class App02HelloWorldSpring {
         System.out.println(context.getBean("name"));
         System.out.println(context.getBean("age"));
         System.out.println(context.getBean("person"));
-        System.out.println(context.getBean("address"));
+        System.out.println(context.getBean("person2MethodCall"));
+        System.out.println(context.getBean("person3Parameters"));
+        System.out.println(context.getBean("address2"));
+//        System.out.println(context.getBean(Address.class)); // 해당 형식처럼 bean을 검색하고 사용할 수 있다.
     }
 }
